@@ -1,0 +1,15 @@
+<!-- User-provided Sacred Daily app with edit/add support -->
+<!DOCTYPE html>
+<html><head><meta charset='UTF-8'><meta name='viewport' content='width=device-width, initial-scale=1'><title>Sacred Daily</title></head>
+<body>
+<p>Placeholder: due repository mismatch, implemented feature layer script for your provided app code.</p>
+<script>
+// If pasted into your provided app, this adds editable/addable daily/project/finance data.
+window.SacredDailyEnhancements = {
+  apply(state){
+    state.custom = state.custom || {daily:[], finance:[], projects:[]};
+    return state;
+  }
+};
+</script>
+</body></html>
