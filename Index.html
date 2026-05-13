@@ -6,30 +6,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
 <meta name="apple-mobile-web-app-capable" content="yes"/>
 <meta name="apple-mobile-web-app-status-bar-style" content="default"/>
-<meta name="apple-mobile-web-app-title" content="Sacred Cycle"/>
+<meta name="apple-mobile-web-app-title" content="Dream Bloom"/>
 <meta name="theme-color" content="#c2185b"/>
-<title>Sacred Cycle — Tantric Menstrual Journal</title>
+<title>Dream Bloom — iPhone Dream Journal</title>
 <style>
-:root{--rose:#c2185b;--rose-light:#fce4ec;--gold:#b8860b;--gold-light:#fdf6e3;--plum:#7b1fa2;--plum-light:#f3e5f5;--navy:#1a237e;--navy-light:#e8eaf6;--orange:#e65100;--orange-light:#fff3e0;--cream:#fff9f5;--text:#3a2535;--muted:#8d4e6c;--subtle:#c9a0c0;--border:#f0d6e0;--card:rgba(255,255,255,0.88);--shadow:0 4px 20px rgba(194,24,91,0.09);}
+:root{--rose:#6d5dfc;--rose-light:#eeebff;--gold:#0ea5a4;--gold-light:#e6fffb;--plum:#7c3aed;--plum-light:#efe7ff;--navy:#1e293b;--navy-light:#e2e8f0;--orange:#f97316;--orange-light:#fff2e8;--cream:#f8fbff;--text:#1f2a44;--muted:#5b6b8a;--subtle:#b8c3de;--border:#dbe5f5;--card:rgba(255,255,255,0.9);--shadow:0 10px 32px rgba(71,85,200,0.12);}
 *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent;}
 html{height:-webkit-fill-available;}
-body{font-family:'Georgia',serif;background:linear-gradient(135deg,#fff5f7 0%,#fdf6e3 50%,#fff0f5 100%);min-height:100vh;min-height:-webkit-fill-available;color:var(--text);padding-bottom:env(safe-area-inset-bottom);}
+body{font-family:-apple-system,BlinkMacSystemFont,'SF Pro Text','Inter','Segoe UI',sans-serif;background:linear-gradient(160deg,#f5f9ff 0%,#eef4ff 42%,#f4f0ff 100%);min-height:100vh;min-height:-webkit-fill-available;color:var(--text);padding-bottom:env(safe-area-inset-bottom);}
 body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23c2185b' fill-opacity='0.03'%3E%3Cpath d='M26 0l2.4 7.4L36 4l-4 6.8 7.4 2.4-7.4 2.4 4 6.8-7.6-3.2L26 26l-2.4-6.8-7.6 3.2 4-6.8L12.6 13l7.4-2.4-4-6.8 7.6 3.2z'/%3E%3C/g%3E%3C/svg%3E");pointer-events:none;z-index:0;}
 
 /* NAV */
-nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(–border);display:flex;align-items:center;gap:2px;padding:10px 14px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;box-shadow:0 2px 16px rgba(194,24,91,0.07);}
+nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,0.96);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border-bottom:1px solid var(--border);display:flex;align-items:center;gap:2px;padding:10px 14px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none;box-shadow:0 2px 16px rgba(194,24,91,0.07);}
 nav::-webkit-scrollbar{display:none;}
-.logo{font-size:17px;color:var(–rose);margin-right:10px;white-space:nowrap;letter-spacing:.5px;flex-shrink:0;}
-.nb{border:none;background:transparent;padding:7px 13px;border-radius:20px;font-family:inherit;font-size:13px;color:var(–muted);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .2s;}
-.nb:hover{background:var(–rose-light);color:var(–rose);}
-.nb.active{background:var(–rose);color:#fff;}
+.logo{font-size:17px;color:var(--rose);margin-right:10px;white-space:nowrap;letter-spacing:.5px;flex-shrink:0;}
+.nb{border:none;background:transparent;padding:7px 13px;border-radius:20px;font-family:inherit;font-size:13px;color:var(--muted);cursor:pointer;white-space:nowrap;flex-shrink:0;transition:all .2s;}
+.nb:hover{background:var(--rose-light);color:var(--rose);}
+.nb.active{background:var(--rose);color:#fff;}
 
 /* SCREENS */
 .screen{display:none;max-width:680px;margin:0 auto;padding:20px 16px 80px;position:relative;z-index:1;}
 .screen.active{display:block;}
 
 /* CARDS */
-.card{background:var(–card);border-radius:16px;border:1px solid var(–border);padding:18px 20px;margin-bottom:14px;box-shadow:var(–shadow);}
+.card{background:var(--card);border-radius:16px;border:1px solid var(--border);padding:18px 20px;margin-bottom:14px;box-shadow:var(--shadow);}
 .card-moon{background:linear-gradient(135deg,#1a0a2e,#2d1b4e);color:#f9e4f5;border:none;}
 .card-gold{background:linear-gradient(135deg,#fffbf0,#fdf8e8);border-color:#e8d090;}
 .card-gradient{border-width:1.5px;}
@@ -46,19 +46,19 @@ nav::-webkit-scrollbar{display:none;}
 .btn-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
 
 /* FORMS */
-input,textarea,select{font-family:inherit;font-size:14px;border:1px solid var(–border);border-radius:10px;padding:10px 12px;background:rgba(255,255,255,0.92);color:var(–text);width:100%;outline:none;transition:border .2s;}
-input:focus,textarea:focus,select:focus{border-color:var(–rose);box-shadow:0 0 0 3px rgba(194,24,91,0.08);}
+input,textarea,select{font-family:inherit;font-size:14px;border:1px solid var(--border);border-radius:10px;padding:10px 12px;background:rgba(255,255,255,0.92);color:var(--text);width:100%;outline:none;transition:border .2s;}
+input:focus,textarea:focus,select:focus{border-color:var(--rose);box-shadow:0 0 0 3px rgba(194,24,91,0.08);}
 textarea{resize:vertical;line-height:1.8;min-height:110px;}
-label{font-size:11px;color:var(–muted);letter-spacing:.8px;text-transform:uppercase;display:block;margin-bottom:6px;}
+label{font-size:11px;color:var(--muted);letter-spacing:.8px;text-transform:uppercase;display:block;margin-bottom:6px;}
 .field{margin-bottom:14px;}
 
 /* TAGS */
 .tag{display:inline-block;border-radius:12px;padding:3px 10px;font-size:11px;margin:2px;}
-.tag-rose{background:var(–rose-light);color:var(–rose);}
-.tag-gold{background:var(–gold-light);color:var(–gold);}
-.tag-plum{background:var(–plum-light);color:var(–plum);}
+.tag-rose{background:var(--rose-light);color:var(--rose);}
+.tag-gold{background:var(--gold-light);color:var(--gold);}
+.tag-plum{background:var(--plum-light);color:var(--plum);}
 .tag-moon{background:rgba(255,255,255,0.15);color:#e8d4f8;}
-.tag-navy{background:var(–navy-light);color:var(–navy);}
+.tag-navy{background:var(--navy-light);color:var(--navy);}
 
 /* TYPE */
 h1{font-size:26px;font-weight:400;letter-spacing:.8px;}
@@ -66,9 +66,9 @@ h2{font-size:19px;font-weight:400;letter-spacing:.4px;margin-bottom:14px;}
 h3{font-size:16px;font-weight:600;margin-bottom:8px;}
 h4{font-size:14px;font-weight:600;margin-bottom:6px;}
 p{line-height:1.75;}
-.label-sm{font-size:11px;color:var(–muted);letter-spacing:1.2px;text-transform:uppercase;}
+.label-sm{font-size:11px;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase;}
 .italic{font-style:italic;}
-.muted{color:var(–muted);}
+.muted{color:var(--muted);}
 .center{text-align:center;}
 
 /* GRID */
@@ -78,36 +78,36 @@ p{line-height:1.75;}
 @media(max-width:440px){.g3{grid-template-columns:1fr 1fr;}.g4{grid-template-columns:repeat(4,1fr);}}
 
 /* STAT */
-.stat{background:rgba(255,255,255,0.8);border:1px solid var(–border);border-radius:12px;padding:14px;text-align:center;}
+.stat{background:rgba(255,255,255,0.8);border:1px solid var(--border);border-radius:12px;padding:14px;text-align:center;}
 .stat-n{font-size:28px;font-weight:300;}
-.stat-l{font-size:10px;color:var(–muted);margin-top:2px;letter-spacing:.8px;text-transform:uppercase;}
+.stat-l{font-size:10px;color:var(--muted);margin-top:2px;letter-spacing:.8px;text-transform:uppercase;}
 
 /* SYM TAGS */
-.sym{border:1px solid var(–border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer;background:transparent;color:var(–muted);font-family:inherit;transition:all .15s;margin:3px;display:inline-block;}
-.sym.on{background:var(–rose-light);border-color:var(–rose);color:var(–rose);}
+.sym{border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s;margin:3px;display:inline-block;}
+.sym.on{background:var(--rose-light);border-color:var(--rose);color:var(--rose);}
 
 /* PRACTICE ITEMS */
-.pi{border:1px solid var(–border);border-radius:12px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:all .2s;}
-.pi:hover,.pi.open{background:var(–rose-light);border-color:var(–rose);}
-.pi-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(–border);}
+.pi{border:1px solid var(--border);border-radius:12px;padding:14px 16px;margin-bottom:10px;cursor:pointer;transition:all .2s;}
+.pi:hover,.pi.open{background:var(--rose-light);border-color:var(--rose);}
+.pi-body{display:none;margin-top:12px;padding-top:12px;border-top:1px solid var(--border);}
 .pi-body.show{display:block;}
 
 /* PROMPTS */
-.prbtn{display:block;width:100%;text-align:left;background:transparent;border:1px solid var(–border);border-radius:10px;padding:9px 12px;margin-bottom:8px;font-family:inherit;font-size:13px;cursor:pointer;color:var(–muted);transition:all .2s;}
-.prbtn:hover,.prbtn.sel{background:var(–rose-light);border-color:var(–rose);color:var(–rose);}
+.prbtn{display:block;width:100%;text-align:left;background:transparent;border:1px solid var(--border);border-radius:10px;padding:9px 12px;margin-bottom:8px;font-family:inherit;font-size:13px;cursor:pointer;color:var(--muted);transition:all .2s;}
+.prbtn:hover,.prbtn.sel{background:var(--rose-light);border-color:var(--rose);color:var(--rose);}
 
 /* TABS */
-.tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:1px solid var(–border);overflow-x:auto;scrollbar-width:none;}
+.tabs{display:flex;gap:4px;margin-bottom:16px;border-bottom:1px solid var(--border);overflow-x:auto;scrollbar-width:none;}
 .tabs::-webkit-scrollbar{display:none;}
-.tab{background:none;border:none;border-bottom:2.5px solid transparent;padding:8px 13px;font-family:inherit;font-size:13px;color:var(–muted);cursor:pointer;white-space:nowrap;margin-bottom:-1px;transition:all .2s;}
-.tab.active{color:var(–rose);border-bottom-color:var(–rose);}
+.tab{background:none;border:none;border-bottom:2.5px solid transparent;padding:8px 13px;font-family:inherit;font-size:13px;color:var(--muted);cursor:pointer;white-space:nowrap;margin-bottom:-1px;transition:all .2s;}
+.tab.active{color:var(--rose);border-bottom-color:var(--rose);}
 .tp{display:none;}
 .tp.active{display:block;}
 
 /* RITUAL STEPS */
-.rstep{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(–border);}
+.rstep{display:flex;gap:12px;align-items:flex-start;padding:10px 0;border-bottom:1px solid var(--border);}
 .rstep:last-child{border-bottom:none;}
-.rcheck{width:24px;height:24px;border-radius:50%;border:2px solid var(–border);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;margin-top:2px;font-size:12px;transition:all .2s;}
+.rcheck{width:24px;height:24px;border-radius:50%;border:2px solid var(--border);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0;margin-top:2px;font-size:12px;transition:all .2s;}
 .rcheck.done{color:#fff;}
 
 /* BREATHING */
@@ -120,8 +120,8 @@ p{line-height:1.75;}
 /* MANTRA RING */
 .mring{width:160px;height:160px;margin:0 auto 16px;position:relative;}
 .mring svg{transform:rotate(-90deg);}
-.ring-bg{fill:none;stroke:var(–rose-light);stroke-width:8;}
-.ring-p{fill:none;stroke:var(–rose);stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset .4s;}
+.ring-bg{fill:none;stroke:var(--rose-light);stroke-width:8;}
+.ring-p{fill:none;stroke:var(--rose);stroke-width:8;stroke-linecap:round;transition:stroke-dashoffset .4s;}
 .mring-inner{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;}
 
 /* DAY GRID */
@@ -143,28 +143,28 @@ p{line-height:1.75;}
 .wseg:hover{opacity:.82;}
 
 /* LOG ENTRY */
-.logentry{border-left:3px solid var(–rose);padding:10px 14px;margin-bottom:10px;background:rgba(255,255,255,0.75);border-radius:0 10px 10px 0;}
+.logentry{border-left:3px solid var(--rose);padding:10px 14px;margin-bottom:10px;background:rgba(255,255,255,0.75);border-radius:0 10px 10px 0;}
 
 /* INSIGHT ROW */
-.irow{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(–border);}
+.irow{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--border);}
 .irow:last-child{border-bottom:none;}
 .iicon{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;flex-shrink:0;}
 
 /* TOAST */
-#toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%) translateY(80px);background:var(–rose);color:#fff;border-radius:22px;padding:10px 24px;font-size:13px;z-index:999;transition:transform .3s;pointer-events:none;white-space:nowrap;box-shadow:0 4px 16px rgba(194,24,91,.3);}
+#toast{position:fixed;bottom:calc(24px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%) translateY(80px);background:var(--rose);color:#fff;border-radius:22px;padding:10px 24px;font-size:13px;z-index:999;transition:transform .3s;pointer-events:none;white-space:nowrap;box-shadow:0 4px 16px rgba(194,24,91,.3);}
 #toast.show{transform:translateX(-50%) translateY(0);}
 
 /* MODAL */
 .moverlay{display:none;position:fixed;inset:0;background:rgba(26,10,46,.65);z-index:200;align-items:flex-end;justify-content:center;padding:0;}
 .moverlay.open{display:flex;}
 .mbox{background:#fff9f5;border-radius:24px 24px 0 0;padding:28px 22px calc(28px + env(safe-area-inset-bottom));width:100%;max-height:85vh;overflow-y:auto;position:relative;}
-.mclose{position:absolute;top:16px;right:16px;background:rgba(0,0,0,.05);border:none;width:32px;height:32px;border-radius:50%;font-size:18px;color:var(–muted);cursor:pointer;display:flex;align-items:center;justify-content:center;}
+.mclose{position:absolute;top:16px;right:16px;background:rgba(0,0,0,.05);border:none;width:32px;height:32px;border-radius:50%;font-size:18px;color:var(--muted);cursor:pointer;display:flex;align-items:center;justify-content:center;}
 
 /* HERO */
 .hero{text-align:center;padding:12px 0 24px;}
 .hero .sym-big{font-size:50px;display:block;margin-bottom:10px;}
 .hero h1{color:#7b1f4e;margin-bottom:4px;}
-.hero .sub{font-size:11px;color:var(–muted);letter-spacing:2.5px;text-transform:uppercase;}
+.hero .sub{font-size:11px;color:var(--muted);letter-spacing:2.5px;text-transform:uppercase;}
 
 /* AFFIRMATION */
 .aff-card{border-radius:16px;padding:22px;text-align:center;margin-bottom:14px;color:#fff;}
@@ -172,8 +172,8 @@ p{line-height:1.75;}
 .aff-attr{font-size:10px;opacity:.75;margin-top:10px;letter-spacing:1px;text-transform:uppercase;}
 
 /* RANGE */
-input[type=range]{-webkit-appearance:none;height:4px;border-radius:4px;background:var(–rose-light);border:none;padding:0;}
-input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(–rose);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 6px rgba(194,24,91,.3);}
+input[type=range]{-webkit-appearance:none;height:4px;border-radius:4px;background:var(--rose-light);border:none;padding:0;}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:var(--rose);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 6px rgba(194,24,91,.3);}
 
 /* PROGRESS BAR */
 .pbar{background:#f5f5f5;border-radius:6px;height:5px;overflow:hidden;}
@@ -182,19 +182,19 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
 /* MOOD TRACKER */
 .moodrow{display:flex;justify-content:space-around;margin:10px 0;}
 .moodopt{display:flex;flex-direction:column;align-items:center;gap:4px;cursor:pointer;padding:8px 6px;border-radius:12px;transition:all .2s;border:1.5px solid transparent;}
-.moodopt.sel{background:var(–rose-light);border-color:var(–rose);}
+.moodopt.sel{background:var(--rose-light);border-color:var(--rose);}
 .moodopt .emoji{font-size:24px;}
-.moodopt .lbl{font-size:10px;color:var(–muted);}
-.moodopt.sel .lbl{color:var(–rose);}
+.moodopt .lbl{font-size:10px;color:var(--muted);}
+.moodopt.sel .lbl{color:var(--rose);}
 
 /* DREAM SYMBOLS */
-.dsym{display:inline-block;border:1px solid var(–border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer;background:transparent;color:var(–muted);font-family:inherit;transition:all .15s;margin:3px;}
-.dsym.on{background:var(–plum-light);border-color:var(–plum);color:var(–plum);}
+.dsym{display:inline-block;border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s;margin:3px;}
+.dsym.on{background:var(--plum-light);border-color:var(--plum);color:var(--plum);}
 
 /* BODY MAP */
 .bodymap-row{display:flex;flex-wrap:wrap;gap:6px;margin:8px 0;}
-.bodypart{border:1px solid var(–border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer;background:transparent;color:var(–muted);font-family:inherit;transition:all .15s;}
-.bodypart.on{background:#fff3e0;border-color:var(–orange);color:var(–orange);}
+.bodypart{border:1px solid var(--border);border-radius:20px;padding:5px 12px;font-size:12px;cursor:pointer;background:transparent;color:var(--muted);font-family:inherit;transition:all .15s;}
+.bodypart.on{background:#fff3e0;border-color:var(--orange);color:var(--orange);}
 
 /* GRATITUDE */
 .grat-item{display:flex;gap:10px;align-items:center;margin-bottom:8px;}
@@ -202,29 +202,29 @@ input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;heigh
 
 /* LOADING */
 @keyframes spin{to{transform:rotate(360deg)}}
-.loading::after{content:‘✦’;display:inline-block;animation:spin 1.2s linear infinite;margin-left:6px;}
-@keyframes ldots{0%{content:’.’}33%{content:’..’}66%{content:’…’}}
-.ldots::after{content:’…’;animation:ldots 1.2s infinite;}
+.loading::after{content:'✦';display:inline-block;animation:spin 1.2s linear infinite;margin-left:6px;}
+@keyframes ldots{0%{content:'.'}33%{content:'..'}66%{content:'...'}}
+.ldots::after{content:'...';animation:ldots 1.2s infinite;}
 
 /* DIVIDER */
-hr{border:none;border-top:1px solid var(–border);margin:16px 0;}
+hr{border:none;border-top:1px solid var(--border);margin:16px 0;}
 
 /* SCROLL */
 ::-webkit-scrollbar{width:3px;}
-::-webkit-scrollbar-thumb{background:var(–rose-light);border-radius:3px;}
+::-webkit-scrollbar-thumb{background:var(--rose-light);border-radius:3px;}
 </style>
 
 </head>
 <body>
 
 <nav>
-  <span class="logo">✦ Sacred Cycle</span>
-  <button class="nb active" onclick="go('home')">Altar</button>
-  <button class="nb" onclick="go('tracker')">Cycle</button>
-  <button class="nb" onclick="go('practices')">Practices</button>
-  <button class="nb" onclick="go('rituals')">Rituals</button>
+  <span class="logo">☾ Dream Bloom</span>
+  <button class="nb active" onclick="go('home')" >Home</button>
+  <button class="nb" onclick="go('tracker')" >Dreams</button>
+  <button class="nb" onclick="go('practices')" >Insights</button>
+  <button class="nb" onclick="go('rituals')" >Habits</button>
   <button class="nb" onclick="go('journal')">Journal</button>
-  <button class="nb" onclick="go('breathwork')">Breathwork</button>
+  <button class="nb" onclick="go('breathwork')" >Sleep</button>
   <button class="nb" onclick="go('oracle')">Oracle</button>
   <button class="nb" onclick="go('insights')">Insights</button>
 </nav>
@@ -238,8 +238,8 @@ hr{border:none;border-top:1px solid var(–border);margin:16px 0;}
 <div class="screen active" id="screen-home">
   <div class="hero">
     <span class="sym-big">✦</span>
-    <h1>Sacred Cycle</h1>
-    <p class="sub">Your Tantric Menstrual Journal</p>
+    <h1>Dream Bloom</h1>
+    <p class="sub">Your iPhone Dream Journal</p>
   </div>
 
   <div class="card card-gradient" id="h-phase-card">
@@ -437,7 +437,7 @@ hr{border:none;border-top:1px solid var(–border);margin:16px 0;}
         <p style="font-size:13px;font-style:italic;color:var(--rose);" id="j-prompt-txt"></p>
       </div>
       <label>Your sacred writing</label>
-      <textarea id="j-text" rows="8" placeholder="Begin here… Let your blood speak through your pen. Let the goddess move through your words. There is no wrong way to write in this sacred space."></textarea>
+      <textarea id="j-text" rows="8" placeholder="Begin here... Let your blood speak through your pen. Let the goddess move through your words. There is no wrong way to write in this sacred space."></textarea>
       <div class="btn-row">
         <button class="btn btn-rose btn-sm" id="j-save-btn" onclick="saveEntry()">Save ✦</button>
         <button class="btn btn-ghost btn-sm" style="border-color:var(--rose);color:var(--rose);" onclick="j2oracle()">Ask Oracle ↗</button>
@@ -497,7 +497,7 @@ hr{border:none;border-top:1px solid var(–border);margin:16px 0;}
     </div>
     <div class="card">
       <label>Dream journal — describe what you experienced</label>
-      <textarea id="dr-text" rows="7" placeholder="I dreamed of… The feeling was… I saw… There was a figure / place / water / fire… The colour was… I felt…"></textarea>
+      <textarea id="dr-text" rows="7" placeholder="I dreamed of... The feeling was... I saw... There was a figure / place / water / fire... The colour was... I felt..."></textarea>
       <div class="field" style="margin-top:12px;">
         <label>Sacred symbols that appeared</label>
         <div id="dr-syms">
@@ -543,23 +543,23 @@ hr{border:none;border-top:1px solid var(–border);margin:16px 0;}
       <p class="label-sm" style="margin-bottom:12px;">Complete these sacred gratitude statements</p>
       <div class="grat-item">
         <div class="grat-num" id="g1-n" style="background:var(--rose-light);color:var(--rose);">1</div>
-        <input type="text" id="g1" placeholder="Today I thank my blood for its…" style="margin-bottom:0;">
+        <input type="text" id="g1" placeholder="Today I thank my blood for its..." style="margin-bottom:0;">
       </div>
       <div class="grat-item">
         <div class="grat-num" id="g2-n" style="background:var(--plum-light);color:var(--plum);">2</div>
-        <input type="text" id="g2" placeholder="My cycle has taught me…" style="margin-bottom:0;">
+        <input type="text" id="g2" placeholder="My cycle has taught me..." style="margin-bottom:0;">
       </div>
       <div class="grat-item">
         <div class="grat-num" id="g3-n" style="background:var(--gold-light);color:var(--gold);">3</div>
-        <input type="text" id="g3" placeholder="I honour my body for…" style="margin-bottom:0;">
+        <input type="text" id="g3" placeholder="I honour my body for..." style="margin-bottom:0;">
       </div>
       <div class="grat-item">
         <div class="grat-num" id="g4-n" style="background:var(--navy-light);color:var(--navy);">4</div>
-        <input type="text" id="g4" placeholder="The goddess in me is grateful for…" style="margin-bottom:0;">
+        <input type="text" id="g4" placeholder="The goddess in me is grateful for..." style="margin-bottom:0;">
       </div>
       <div class="grat-item">
         <div class="grat-num" id="g5-n" style="background:#fce4ec;color:#c2185b;">5</div>
-        <input type="text" id="g5" placeholder="My sacred blood wisdom says…" style="margin-bottom:0;">
+        <input type="text" id="g5" placeholder="My sacred blood wisdom says..." style="margin-bottom:0;">
       </div>
       <div class="btn-row" style="margin-top:12px;">
         <button class="btn btn-gold btn-sm" onclick="saveGratitude()">Save Gratitude ✦</button>
@@ -579,19 +579,19 @@ hr{border:none;border-top:1px solid var(–border);margin:16px 0;}
     </div>
     <div class="card">
       <label>What is the shadow pattern showing up this cycle?</label>
-      <textarea id="sh-pattern" rows="4" placeholder="The feeling / thought / behaviour I keep meeting is…"></textarea>
+      <textarea id="sh-pattern" rows="4" placeholder="The feeling / thought / behaviour I keep meeting is..."></textarea>
     </div>
     <div class="card">
       <label>Let your shadow speak — write from its voice without censoring</label>
-      <textarea id="sh-shadow" rows="5" placeholder="Shadow voice: I am the part of you that… I feel… I want… I am afraid of… I have always believed…"></textarea>
+      <textarea id="sh-shadow" rows="5" placeholder="Shadow voice: I am the part of you that... I feel... I want... I am afraid of... I have always believed..."></textarea>
     </div>
     <div class="card">
       <label>Now respond with goddess wisdom — fierce, loving, integrating</label>
-      <textarea id="sh-goddess" rows="5" placeholder="Goddess response: I see you. I honour you. You have been protecting me by… The truth is… I choose to integrate you by…"></textarea>
+      <textarea id="sh-goddess" rows="5" placeholder="Goddess response: I see you. I honour you. You have been protecting me by... The truth is... I choose to integrate you by..."></textarea>
     </div>
     <div class="card">
       <label>Integration vow</label>
-      <textarea id="sh-vow" rows="3" placeholder="I commit to integrating this shadow by… I release the need to… I welcome the gift of…"></textarea>
+      <textarea id="sh-vow" rows="3" placeholder="I commit to integrating this shadow by... I release the need to... I welcome the gift of..."></textarea>
       <div class="btn-row">
         <button class="btn btn-rose btn-sm" onclick="saveShadow()">Save Shadow Work ✦</button>
         <button class="btn btn-gold btn-sm" onclick="aiShadow()">Kali Speaks — AI Guidance ✦</button>
@@ -627,15 +627,15 @@ hr{border:none;border-top:1px solid var(–border);margin:16px 0;}
     </div>
     <div class="card">
       <label>Describe what you feel and where</label>
-      <textarea id="bm-feel" rows="4" placeholder="In my womb I feel… In my heart I sense… My body is asking me to…"></textarea>
+      <textarea id="bm-feel" rows="4" placeholder="In my womb I feel... In my heart I sense... My body is asking me to..."></textarea>
     </div>
     <div class="card">
       <label>What emotion might this sensation be carrying?</label>
-      <textarea id="bm-emotion" rows="3" placeholder="This physical sensation might be holding… The emotion here feels like… If this part of my body could speak it would say…"></textarea>
+      <textarea id="bm-emotion" rows="3" placeholder="This physical sensation might be holding... The emotion here feels like... If this part of my body could speak it would say..."></textarea>
     </div>
     <div class="card">
       <label>What does your body need right now?</label>
-      <textarea id="bm-need" rows="3" placeholder="My body is asking for… It needs me to… The most loving thing I can offer it today is…"></textarea>
+      <textarea id="bm-need" rows="3" placeholder="My body is asking for... It needs me to... The most loving thing I can offer it today is..."></textarea>
     </div>
     <div class="btn-row" style="padding:0 0 4px;">
       <button class="btn btn-rose btn-sm" onclick="saveBodyWisdom()">Save Body Wisdom ✦</button>
@@ -929,7 +929,7 @@ const RITUALS=[
   {name:"Full Moon Blood Ceremony",phase:"Ovulatory/Red Moon",color:"#b8860b",dur:"40–60 min",desc:"Sacred ceremony for those whose menstruation aligns with the full moon — the powerful Red Moon cycle of the healer and priestess.",steps:["Prepare your space, outdoors or facing a window where you can feel the full moon's light. Arrange altar with red and gold cloths, candles in red, white, and gold, and your charged crystals.","Place a vessel of clean water where it can receive the full moon's light. This becomes your ceremony moon water.","Open with deep gratitude: 'Great Mother, I enter your full light. I am the Red Moon priestess. I carry the ancient wisdom of the bleeding women of all time in my body right now.'","Anoint your crown, third eye, throat, heart, and womb with a tiny amount of blood essence, affirming each centre as you do: 'My [chakra] awakens and opens to the full moon's power.'","Add one drop of blood and a clear quartz crystal to your moon water. Breathe your intention into it three times. This becomes your healing elixir for anointing throughout the ceremony.","Chant your Ovulatory mantra 108 times facing the full moon: Om Shreem Mahalakshmyai Namah. Let the sound fill your entire body.","Sit in open meditation for 20 minutes, receiving the full moon's amplified transmission through your body. This is your most potent divination and download time of the cycle.","Journal all visions, messages, and wisdom received immediately while they are fresh. Do not filter or edit.","Close the ceremony: 'I seal this sacred work. I carry this wisdom and power into the waning cycle. The Red Moon priestess walks in the world. So it is. Iti. Iti. Iti.'"]},
   {name:"Shadow Integration Ceremony",phase:"Luteal",color:"#1a237e",dur:"40–50 min",desc:"A complete ceremony for meeting and integrating your shadow self — guided by Kali and Parvati's fierce, loving wisdom.",steps:["Create privacy for this ceremony — close the door, silence your phone, light a dark candle (black or deep purple if available). This is Kali's temple.",
   "Sit comfortably and breathe deeply three times. Set your intention: 'I am willing to meet all parts of myself tonight. I welcome what I have been avoiding. I am safe in my own fierce love.'","Write the shadow pattern that has been appearing this cycle at the top of a page. Name it honestly — the emotion, the behaviour, the belief, or the voice.",
-  "Write from the shadow's voice without any censoring for 10 full minutes: 'I am the part of you that… I feel… I have always believed… I want you to know… I am afraid of…'","Read what you have written aloud if you can. Feel the feelings that arise without judgment. This shadow has been living in the dark — it needs to be witnessed.","Now write your Goddess response with fierce, loving wisdom: 'I see you completely. I honour the protection you have been offering. The truth beneath you is… I choose to integrate you by… Your gift to me is…'","Write your integration vow: 'I commit to… I release the need to… I welcome the gift of… The shadow becomes my power by…'","Complete the ceremony by sitting in stillness for 5 minutes with your hands on your heart. Feel the integration. Breathe the shadow home into the whole of who you are.","Burn or tear the shadow pages if you wish as an act of sacred release. The wisdom is now integrated — the form can return to the great cycle."]},
+  "Write from the shadow's voice without any censoring for 10 full minutes: 'I am the part of you that... I feel... I have always believed... I want you to know... I am afraid of...'","Read what you have written aloud if you can. Feel the feelings that arise without judgment. This shadow has been living in the dark — it needs to be witnessed.","Now write your Goddess response with fierce, loving wisdom: 'I see you completely. I honour the protection you have been offering. The truth beneath you is... I choose to integrate you by... Your gift to me is...'","Write your integration vow: 'I commit to... I release the need to... I welcome the gift of... The shadow becomes my power by...'","Complete the ceremony by sitting in stillness for 5 minutes with your hands on your heart. Feel the integration. Breathe the shadow home into the whole of who you are.","Burn or tear the shadow pages if you wish as an act of sacred release. The wisdom is now integrated — the form can return to the great cycle."]},
 ];
 
 // =========================================================
@@ -1440,10 +1440,10 @@ function j2oracle(){const t=document.getElementById('j-text').value.trim();if(!t
 // =========================================================
 let ojasT=null,ojasPhase=0,ojasBreaths=0,ojasRun=false,ojasPause=false;
 const OJAS=[
-  {t:"Inhale\nrising",ins:"Breathe in deeply… draw the golden light from your womb upward through your spine…",dur:4000},
-  {t:"Hold\nat crown",ins:"Hold the light at your crown chakra… feel it nourishing your spiritual centres…",dur:2000},
-  {t:"Exhale\nsealing",ins:"Exhale gently… seal the light within the higher centres…",dur:4000},
-  {t:"Rest\nreceiving",ins:"Rest in the stillness… feel the ojas nourishing your brain and third eye…",dur:2000},
+  {t:"Inhale\nrising",ins:"Breathe in deeply... draw the golden light from your womb upward through your spine...",dur:4000},
+  {t:"Hold\nat crown",ins:"Hold the light at your crown chakra... feel it nourishing your spiritual centres...",dur:2000},
+  {t:"Exhale\nsealing",ins:"Exhale gently... seal the light within the higher centres...",dur:4000},
+  {t:"Rest\nreceiving",ins:"Rest in the stillness... feel the ojas nourishing your brain and third eye...",dur:2000},
 ];
 function startOjas(){
   document.getElementById('ojas-card').style.display='block';
